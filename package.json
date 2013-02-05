@@ -1,14 +1,14 @@
 {
-  "name": "mustachepp",
+  "name": "beefcake.js",
   "version": "0.0.2",
-  "keywords": ["mustache", "handlebars", "templating", "javascript"],
+  "keywords": ["mustache", "hoganjs", "handlebars", "templating", "javascript"],
   "author": {
     "name": "Darren Schnare",
     "email": "schnare.d@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "http://github.com/dschnare/mustachepp.git"
+    "url": "http://github.com/dschnare/beefcake.js.git"
   },
   "main": "./mustchepp.js",
   "devDependencies": {    
