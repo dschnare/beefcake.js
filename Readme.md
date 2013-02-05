@@ -133,7 +133,7 @@ The `#with` helper will render its section text in the context of the specified 
 
     The mode is prod.
 
-Note that the `#with` section helper will not iterate over the items of an `Array` if its path specifies an `Array`. Also, notice that for convenience the `private` variable `@value` can be used to refer to the view of the `#with` section.
+Note that the `#with` section helper will not iterate over the items of an `Array` if its path specifies an `Array`. Also, notice that for convenience the `private` variable `@value` can be used to refer to the context of the `#with` section.
 
 *the template*
 
