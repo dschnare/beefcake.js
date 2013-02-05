@@ -1,0 +1,21 @@
+{
+  "name": "mustachepp",
+  "version": "0.0.2",
+  "keywords": ["mustache", "handlebars", "templating", "javascript"],
+  "author": {
+    "name": "Darren Schnare",
+    "email": "schnare.d@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/dschnare/mustachepp.git"
+  },
+  "main": "./mustchepp.js",
+  "devDependencies": {    
+    "hogan.js-template": "*",
+    "hogan.js": "git://github.com/twitter/hogan.js.git",
+    "uglify-js": "*",
+    "glob": "*",
+    "jasmine-node": "*"
+  }
+}
