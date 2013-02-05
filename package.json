@@ -10,7 +10,7 @@
     "type": "git",
     "url": "http://github.com/dschnare/beefcake.js.git"
   },
-  "main": "./mustchepp.js",
+  "main": "./beefcake.js",
   "devDependencies": {    
     "hogan.js-template": "*",
     "hogan.js": "git://github.com/twitter/hogan.js.git",
