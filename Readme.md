@@ -4,7 +4,7 @@
 
 Beefcake.js is the tag team partner for [Hogan.js](http://twitter.github.com/hogan.js/) that adds capabilities similar to Handlebars.js while maintaining full compatibility with the Mustache specification and full backward compatability with Hogan.js.
 
-Beefcake.js came about after discovering Hogan.js and I having noticed it implemented the entire Mustache specification and passed all tests. So I decided to take my work on Mustache++ and port it over to Hogan.js.
+Beefcake.js came about after discovering Hogan.js and I having noticed it implemented the entire Mustache specification and passed all tests. So I decided to take my work on [Mustache++](https://github.com/dschnare/mustachepp) and port it over to Hogan.js.
 
 # Usage
 
