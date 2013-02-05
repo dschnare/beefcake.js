@@ -27,6 +27,10 @@
 
     /// Overriding ///   
 
+    // We override these methods so that the return values of lambdas used in
+    // an interpolation token will be interpolated recursively. This is so that
+    // we meet the entire Mustache spec.
+     
     // Version 2.0.0
     if (typeof hogan.Template.prototype.lv === 'function') {
       hogan.Template.prototype.lv = util.override(hogan.Template.prototype.lv, function (base, val, ctx, partials) {
