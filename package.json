@@ -12,7 +12,6 @@
   },
   "main": "./beefcake.js",
   "devDependencies": {    
-    "hogan.js-template": "*",
     "hogan.js": "git://github.com/twitter/hogan.js.git",
     "uglify-js": "*",
     "glob": "*",
