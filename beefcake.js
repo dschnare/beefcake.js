@@ -105,7 +105,7 @@
 
       self = this;
       ctxStack.push(c);
-      c[0] = util.mixin(util.create(c[0]), helpers);
+      c[c.length - 1] = util.mixin(util.create(c[c.length - 1]), helpers);
       c.lookup = function (path) {
         if (~path.indexOf('.')) {
           return self.d(path, this, p);
