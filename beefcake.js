@@ -30,7 +30,7 @@
     // We override these methods so that the return values of lambdas used in
     // an interpolation token will be interpolated recursively. This is so that
     // we meet the entire Mustache spec.
-     
+
     // Version 2.0.0
     if (typeof hogan.Template.prototype.lv === 'function') {
       hogan.Template.prototype.lv = util.override(hogan.Template.prototype.lv, function (base, val, ctx, partials) {
@@ -71,16 +71,14 @@
       return v;
     });
 
-    // Override Writer.prototype.compile so we can transform the template before hogan
+    // Override hogan.compile so we can transform the template before Hogan
     // has a chance to compile it. We transform all sections of the form from:
     //
     // {{#name arguments}}body{{/name}}
     // to
     // {{#name}}arguments;body{{/name}}
     //
-    // We do this transformation so that the section helper API can read the arugments from the section text.
-    //
-    // Then we override the render function so that we add the helpers to the context.
+    // We do this transformation so that the section helper API can read the arugments from the section text.  
     hogan.compile = util.override(hogan.compile, function (base, template, options) {
       var re, t0, t1, t, result;
 
@@ -100,6 +98,8 @@
       return base.call(this, template, options);
     });  
 
+    // Override the internal rendering function so that we can keep track of the current context stack
+    // and mixin the helpers into the current context.
     hogan.Template.prototype.ri = util.override(hogan.Template.prototype.ri, function (base, c, p, i) {
       var result, self;
 
