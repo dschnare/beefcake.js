@@ -319,9 +319,7 @@ Example:
       // Lookup the value of the path in the context stack.
       // If the value is null of undefined then return an empty
       // string. Otherwise we push the value onto the context
-      // stack and compile a section text as a new template then
-      // call its internal render function ri() so that we can
-      // render with the current context stack.    
+      // stack and render the section text with the context stack.    
 
       result = '';
       value = ctx.lookup(path);
