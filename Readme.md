@@ -6,7 +6,28 @@ Beefcake.js is the tag team partner for [Hogan.js](http://twitter.github.com/hog
 
 Beefcake.js came about after discovering Hogan.js and I having noticed it implemented the entire Mustache specification and passed all tests. So I decided to take my work on [Mustache++](https://github.com/dschnare/mustachepp) and port it over to Hogan.js.
 
+# Install
+
+    npm install git://github.com/dschnare/beefcake.js
+
 # Usage
+
+    var Hogan = require('beefcake.js');
+    var view = {
+      father: {
+        name: 'Raymond',
+        son: {
+          name: 'Eric',
+          friend: {
+            name: 'Alex'
+          }
+        }
+      }
+    };
+    var template = '{{#father.son}}{{#friend}}<p>{{:name}}\'s friend is {{name}}</p>{{/friend}}{{/father.son}}';
+    var result = Hogan.render(template, view);
+
+# Learn
 
 Beefcake.js modifies the existing Hogan object in-place so the same API you're used to with Hogan is preserved. Beefcake.js only overrides and adds extensions to the existing Hogan object.
 
